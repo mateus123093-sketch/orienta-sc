@@ -8,6 +8,7 @@ const progressTrack = document.getElementById("progress-track");
 const profileStrip = document.getElementById("profile-strip");
 const profileChips = document.getElementById("profile-chips");
 const results = document.getElementById("results");
+const resultsWarning = document.getElementById("results-warning");
 const coursesGrid = document.getElementById("courses-grid");
 const facultiesList = document.getElementById("faculties-list");
 const disclaimer = document.getElementById("disclaimer");
@@ -122,6 +123,8 @@ async function iniciar() {
     chatOptions.innerHTML = "";
     profileStrip.hidden = true;
     results.hidden = true;
+    resultsWarning.hidden = true;
+    resultsWarning.innerHTML = "";
     atualizarProgresso({ atual: 0, total: dados.progresso.total });
 
     adicionarMensagem(
@@ -153,10 +156,19 @@ function mostrarPergunta(dados) {
   renderizarOpcoes();
 }
 
+function criarAviso(texto, classe) {
+  const caixa = h("div", classe);
+  caixa.appendChild(h("span", "aviso-icone", "!"));
+  caixa.appendChild(h("p", "aviso-texto", texto));
+  return caixa;
+}
+
 function renderizarOpcoes() {
   chatOptions.innerHTML = "";
   const pergunta = state.pergunta;
   if (!pergunta) return;
+
+  if (pergunta.aviso) chatOptions.appendChild(criarAviso(pergunta.aviso, "chat-warning"));
 
   if (pergunta.tipo === "cidade") return renderizarCidades(pergunta);
   if (pergunta.tipo === "multi") return renderizarMulti(pergunta);
@@ -339,6 +351,15 @@ function renderizarResultado(resultado) {
   renderizarCursos(resultado.cursos);
   renderizarFaculdades(resultado.faculdades);
 
+  resultsWarning.innerHTML = "";
+  const avisos = resultado.avisos || [];
+  if (avisos.length) {
+    avisos.forEach((texto) => resultsWarning.appendChild(criarAviso(texto, "aviso-card")));
+    resultsWarning.hidden = false;
+  } else {
+    resultsWarning.hidden = true;
+  }
+
   disclaimer.innerHTML = "";
   disclaimer.appendChild(h("strong", null, "Importante: "));
   disclaimer.appendChild(
@@ -509,6 +530,8 @@ async function reiniciar() {
     chatOptions.innerHTML = "";
     profileStrip.hidden = true;
     results.hidden = true;
+    resultsWarning.hidden = true;
+    resultsWarning.innerHTML = "";
     atualizarProgresso({ atual: 0, total: dados.progresso.total });
 
     adicionarMensagem(

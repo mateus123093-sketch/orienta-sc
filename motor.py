@@ -348,9 +348,22 @@ class Motor:
                 "faculdades": len(self.ofertas.get(curso["id"], [])),
             })
 
+        avisos = []
+        if perfil.get("orcamento") == 0 and perfil.get("financiamento") in (
+            "prouni_parcial",
+            "fies",
+        ):
+            avisos.append(
+                "Você marcou que precisa de curso gratuito e também escolheu um programa "
+                "que deixa mensalidade. Por isso as faculdades privadas ficaram de fora: "
+                "nenhuma delas cabe em orçamento zero. Se puder pagar uma parte por mês, "
+                "refaça a conversa com um orçamento maior."
+            )
+
         return {
             "cursos": cursos_saida,
             "faculdades": escolhidas,
             "total_combinacoes": len(combinacoes),
+            "avisos": avisos,
             "aviso": self.aviso_dados,
         }

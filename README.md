@@ -227,6 +227,11 @@ lado da mensalidade com bolsa para deixar isso explícito.
 Para que o filtro funcione, o campo `bolsas` de cada instituição precisa listar os
 programas aceitos (`"ProUni"`, `"FIES"`, `"Bolsas próprias"`, `"Gratuito"`).
 
+Quando a pessoa escolhe **curso gratuito** e depois ProUni parcial ou FIES, a
+interface avisa em dois momentos: na própria pergunta (explicando que ainda sobra
+mensalidade) e no resultado (explicando por que nenhuma faculdade privada
+apareceu). Sem o aviso, a lista só com públicas parecia um erro.
+
 ## Aviso sobre os dados
 
 A base atual é **demonstrativa**. Cursos oferecidos por campus, turnos,

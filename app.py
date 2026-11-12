@@ -201,6 +201,30 @@ ROTULOS = {
     "prioridade": "Prioridade",
 }
 
+AVISO_ORCAMENTO_ZERO = (
+    "Você marcou que precisa de curso gratuito. ProUni parcial e FIES ainda deixam "
+    "uma mensalidade para pagar — se escolher um deles, as faculdades privadas ficam "
+    "de fora, porque nenhuma cabe em orçamento zero."
+)
+
+DESCRICAO_INCOMPATIVEL = "Ainda sobra mensalidade — não cabe em orçamento zero"
+
+
+def _pergunta_contextualizada(pergunta: dict, respostas: dict) -> dict:
+    """Ajusta a pergunta de bolsa quando o orçamento é zero."""
+    if pergunta["campo"] != "financiamento" or respostas.get("orcamento") != 0:
+        return pergunta
+
+    nova = dict(pergunta)
+    nova["opcoes"] = []
+    for opcao in pergunta["opcoes"]:
+        copia = dict(opcao)
+        if copia["valor"] in ("prouni_parcial", "fies"):
+            copia["descricao"] = DESCRICAO_INCOMPATIVEL
+        nova["opcoes"].append(copia)
+    nova["aviso"] = AVISO_ORCAMENTO_ZERO
+    return nova
+
 
 def _rotulo_opcao(pergunta: dict, valor) -> str:
     for opcao in pergunta.get("opcoes", []):
@@ -247,6 +271,8 @@ def _pergunta_atual(sessao: Sessao) -> dict | None:
 
 def _estado(sessao_id: str, sessao: Sessao) -> dict:
     pergunta = _pergunta_atual(sessao)
+    if pergunta:
+        pergunta = _pergunta_contextualizada(pergunta, sessao.respostas)
     estado = {
         "sessao_id": sessao_id,
         "tipo": "pergunta" if pergunta else "resultado",
