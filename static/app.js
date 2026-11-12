@@ -420,7 +420,10 @@ function renderizarFaculdades(faculdades) {
     return;
   }
 
-  const rotulosTipo = { publica: "Pública", privada: "Privada", comunitaria: "Comunitária" };
+  // Universidades comunitárias são privadas sem fins lucrativos: para o aluno,
+  // a distinção que importa é "gratuita" (pública) ou "paga" (privada).
+  const rotulosTipo = { publica: "Pública", privada: "Privada", comunitaria: "Privada" };
+  const classesTipo = { publica: "publica", privada: "privada", comunitaria: "privada" };
 
   faculdades.forEach((fac, indice) => {
     const card = h("article", "fac-card");
@@ -430,7 +433,8 @@ function renderizarFaculdades(faculdades) {
 
     const topo = h("div", "fac-top");
     topo.appendChild(h("h4", null, fac.sigla));
-    const badge = h("span", `badge badge--${fac.tipo}`, rotulosTipo[fac.tipo] || fac.tipo);
+    const tipoClasse = classesTipo[fac.tipo] || fac.tipo;
+    const badge = h("span", `badge badge--${tipoClasse}`, rotulosTipo[fac.tipo] || fac.tipo);
     topo.appendChild(badge);
     corpo.appendChild(topo);
 

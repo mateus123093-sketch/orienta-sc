@@ -167,7 +167,9 @@ Cada instituição tem `campi`, e cada campus lista os IDs dos cursos que oferec
 }
 ```
 
-- `tipo`: `publica`, `privada` ou `comunitaria`
+- `tipo`: `publica`, `privada` ou `comunitaria`. Na interface, `comunitaria`
+  aparece como **Privada**: são instituições privadas sem fins lucrativos, e para
+  o aluno a distinção que importa é gratuita (pública) ou paga (privada).
 - `porte`: `pequeno`, `medio` ou `grande`
 - `mensalidade`: valor médio estimado (0 para públicas)
 - `custos`: opcional, para sobrescrever o valor de cursos específicos
