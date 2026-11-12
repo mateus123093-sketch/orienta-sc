@@ -6,6 +6,8 @@ localização, ambiente e reputação.
 
 ![Logo](static/logo.png)
 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/mateus123093-sketch/orienta-sc)
+
 ## Como funciona
 
 1. O chatbot faz 11 perguntas: cidade, mobilidade, áreas de interesse, pontos
@@ -58,6 +60,11 @@ git push -u origin main
 ```
 
 ### Opção 1 — Render (mais simples, grátis)
+
+Atalho: abra **https://render.com/deploy?repo=https://github.com/mateus123093-sketch/orienta-sc**
+— o Render já abre com o `render.yaml` lido e só pede para confirmar.
+
+Ou, pelo painel:
 
 1. Crie uma conta em [render.com](https://render.com) e conecte o GitHub.
 2. **New → Blueprint** e escolha o repositório `orienta-sc`.
