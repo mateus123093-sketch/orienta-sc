@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2E3192">
+  <meta name="description" content="Descubra qual curso superior combina com você e qual faculdade em Santa Catarina se encaixa no seu orçamento, na sua localização e no seu jeito de ser.">
+  <title>Orienta SC — Descubra seu curso e sua faculdade</title>
+  <link rel="icon" type="image/png" href="/static/logo.png">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="bg-blob bg-blob--1" aria-hidden="true"></div>
+  <div class="bg-blob bg-blob--2" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="/">
+      <span class="brand-logo"><img src="/static/logo.png" alt="" width="44" height="46"></span>
+      <span class="brand-name">Orienta<span>SC</span></span>
+    </a>
+    <span class="topbar-tag">
+      <span class="dot"></span>
+      Orientação gratuita para Santa Catarina
+    </span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Curso certo · Faculdade certa</p>
+        <h1>Descubra o curso que combina com você — e onde estudar em Santa Catarina.</h1>
+        <p class="lead">
+          Converse com o Orienta por 2 minutos. Ele cruza seu perfil com cursos e
+          faculdades públicas e privadas de SC, considerando seu orçamento, a
+          distância e o ambiente que você procura.
+        </p>
+
+        <ul class="hero-points">
+          <li>
+            <span class="point-icon" aria-hidden="true">✓</span>
+            <span><strong>Curso + faculdade juntos:</strong> só aparecem instituições que realmente oferecem o curso.</span>
+          </li>
+          <li>
+            <span class="point-icon" aria-hidden="true">✓</span>
+            <span><strong>Conta com o seu bolso:</strong> curso gratuito, mensalidade estimada e bolsas.</span>
+          </li>
+          <li>
+            <span class="point-icon" aria-hidden="true">✓</span>
+            <span><strong>Perto de você:</strong> distância real entre sua cidade e cada campus.</span>
+          </li>
+        </ul>
+
+        <div class="hero-note">
+          <strong>Sem cadastro.</strong> Suas respostas ficam só nesta conversa.
+        </div>
+      </div>
+
+      <section class="chat-card" id="chat-card" aria-label="Chat de orientação vocacional">
+        <div class="chat-head">
+          <div class="bot-avatar" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 8V4H8"/>
+              <rect x="4" y="8" width="16" height="12" rx="3"/>
+              <path d="M2 14h2M20 14h2M9 13v2M15 13v2"/>
+            </svg>
+          </div>
+          <div class="chat-id">
+            <strong>Orienta</strong>
+            <span>Assistente de orientação</span>
+          </div>
+          <span class="chat-status" title="Online"><span class="dot"></span> Online</span>
+        </div>
+
+        <div class="progress-wrap">
+          <div class="progress-track" role="progressbar" aria-label="Progresso das perguntas" aria-valuemin="0" aria-valuemax="11" aria-valuenow="0" id="progress-track">
+            <div class="progress-bar" id="progress-bar"></div>
+          </div>
+          <span class="progress-text" id="progress-text">0/11</span>
+        </div>
+
+        <div class="chat-log" id="chat-log" role="log" aria-live="polite" aria-label="Mensagens da conversa"></div>
+
+        <div class="chat-options" id="chat-options" role="group" aria-label="Opções de resposta"></div>
+      </section>
+    </section>
+
+    <section class="profile-strip" id="profile-strip" hidden aria-label="Resumo do seu perfil">
+      <div class="profile-strip-head">
+        <span class="section-kicker">Seu perfil</span>
+        <button class="link-btn" id="restart-top" type="button">Recomeçar</button>
+      </div>
+      <div class="profile-chips" id="profile-chips"></div>
+    </section>
+
+    <section class="results" id="results" hidden aria-label="Resultado da orientação">
+      <div class="results-head">
+        <div>
+          <span class="section-kicker">Resultado</span>
+          <h2>Seu mapa de cursos e faculdades</h2>
+          <p class="results-sub">As notas mostram o quanto cada opção combina com o que você respondeu. Não é um ranking oficial.</p>
+        </div>
+        <button class="btn btn--ghost" id="restart" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg>
+          Recomeçar
+        </button>
+      </div>
+
+      <div class="result-block">
+        <div class="block-head">
+          <h3>Cursos que mais combinam com você</h3>
+          <span class="block-hint">Afinidade com seu perfil</span>
+        </div>
+        <div class="courses-grid" id="courses-grid"></div>
+      </div>
+
+      <div class="result-block">
+        <div class="block-head">
+          <h3>Onde estudar: faculdades que combinam</h3>
+          <span class="block-hint">Curso + custo + distância + ambiente</span>
+        </div>
+        <div class="faculties-list" id="faculties-list"></div>
+      </div>
+
+      <div class="disclaimer" id="disclaimer"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="brand-name brand-name--sm">Orienta<span>SC</span></span>
+      <p>Orientação vocacional para cursos superiores em Santa Catarina.</p>
+      <p class="footer-small">Dados demonstrativos: confirme cursos, turnos e valores nos sites oficiais das instituições.</p>
+    </div>
+  </footer>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

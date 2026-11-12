@@ -1,0 +1,675 @@
+{
+  "aviso": "Base demonstrativa. Ofertas de cursos, turnos e mensalidades são estimativas e precisam ser validadas nos sites oficiais das instituições antes de publicar o site.",
+  "instituicoes": [
+    {
+      "id": "ufsc",
+      "nome": "Universidade Federal de Santa Catarina",
+      "sigla": "UFSC",
+      "tipo": "publica",
+      "reputacao": 96,
+      "mensalidade": 0,
+      "bolsas": ["Gratuito"],
+      "site": "https://ufsc.br",
+      "porte": "grande",
+      "turnos": ["manha", "tarde", "integral", "noite"],
+      "campi": [
+        {
+          "cidade": "Florianópolis",
+          "cursos": ["medicina", "enfermagem", "farmacia", "odontologia", "nutricao", "fonoaudiologia", "psicologia", "direito", "administracao", "ciencias-contabeis", "economia", "arquitetura-urbanismo", "eng-civil", "eng-mecanica", "eng-eletrica", "eng-producao", "eng-quimica", "ciencia-computacao", "sistemas-informacao", "jornalismo", "design", "artes-visuais", "letras", "pedagogia", "historia", "matematica", "biologia", "servico-social", "relacoes-internacionais", "agronomia", "zootecnia", "educacao-fisica"]
+        },
+        {
+          "cidade": "Joinville",
+          "porte": "medio",
+          "cursos": ["eng-civil", "eng-mecanica", "eng-eletrica", "eng-producao", "ciencia-computacao"]
+        },
+        {
+          "cidade": "Blumenau",
+          "porte": "pequeno",
+          "cursos": ["ciencia-computacao", "sistemas-informacao", "eng-producao", "matematica"]
+        },
+        {
+          "cidade": "Araranguá",
+          "porte": "pequeno",
+          "cursos": ["fisioterapia", "ciencia-computacao", "eng-eletrica"]
+        },
+        {
+          "cidade": "Curitibanos",
+          "porte": "pequeno",
+          "cursos": ["agronomia", "medicina-veterinaria", "biologia"]
+        }
+      ]
+    },
+    {
+      "id": "udesc",
+      "nome": "Universidade do Estado de Santa Catarina",
+      "sigla": "UDESC",
+      "tipo": "publica",
+      "reputacao": 90,
+      "mensalidade": 0,
+      "bolsas": ["Gratuito"],
+      "site": "https://udesc.br",
+      "porte": "grande",
+      "turnos": ["manha", "tarde", "integral", "noite"],
+      "campi": [
+        {
+          "cidade": "Florianópolis",
+          "cursos": ["administracao", "ciencias-contabeis", "economia", "direito", "medicina", "enfermagem", "fisioterapia", "educacao-fisica", "design", "artes-visuais", "pedagogia", "jornalismo"]
+        },
+        {
+          "cidade": "Joinville",
+          "porte": "medio",
+          "cursos": ["eng-civil", "eng-mecanica", "eng-producao", "ciencia-computacao", "sistemas-informacao", "administracao", "design"]
+        },
+        {
+          "cidade": "Lages",
+          "porte": "medio",
+          "cursos": ["agronomia", "medicina-veterinaria", "ciencia-computacao", "administracao", "enfermagem", "biologia"]
+        },
+        {
+          "cidade": "Chapecó",
+          "porte": "medio",
+          "cursos": ["administracao", "ciencias-contabeis", "direito", "enfermagem"]
+        },
+        {
+          "cidade": "Ibirama",
+          "porte": "pequeno",
+          "cursos": ["eng-civil", "ciencia-computacao", "pedagogia"]
+        },
+        {
+          "cidade": "Balneário Camboriú",
+          "porte": "pequeno",
+          "cursos": ["administracao", "design"]
+        },
+        {
+          "cidade": "São Bento do Sul",
+          "porte": "pequeno",
+          "cursos": ["eng-producao"]
+        }
+      ]
+    },
+    {
+      "id": "ifsc",
+      "nome": "Instituto Federal de Santa Catarina",
+      "sigla": "IFSC",
+      "tipo": "publica",
+      "reputacao": 86,
+      "mensalidade": 0,
+      "bolsas": ["Gratuito"],
+      "site": "https://ifsc.edu.br",
+      "porte": "medio",
+      "turnos": ["manha", "tarde", "noite"],
+      "campi": [
+        {
+          "cidade": "Florianópolis",
+          "porte": "grande",
+          "cursos": ["analise-desenvolvimento-sistemas", "gestao-ti", "seguranca-informacao", "eng-civil", "design", "gastronomia"]
+        },
+        {
+          "cidade": "São José",
+          "cursos": ["analise-desenvolvimento-sistemas", "gestao-ti", "seguranca-informacao"]
+        },
+        {
+          "cidade": "Joinville",
+          "cursos": ["analise-desenvolvimento-sistemas", "gestao-ti", "logistica"]
+        },
+        {
+          "cidade": "Chapecó",
+          "cursos": ["analise-desenvolvimento-sistemas", "gestao-ti", "logistica"]
+        },
+        {
+          "cidade": "Criciúma",
+          "cursos": ["analise-desenvolvimento-sistemas", "gestao-ti", "seguranca-informacao"]
+        },
+        {
+          "cidade": "Lages",
+          "cursos": ["analise-desenvolvimento-sistemas", "gestao-ti", "turismo"]
+        },
+        {
+          "cidade": "Blumenau",
+          "cursos": ["analise-desenvolvimento-sistemas", "gestao-ti", "design", "gastronomia"]
+        },
+        {
+          "cidade": "Itajaí",
+          "cursos": ["analise-desenvolvimento-sistemas", "gestao-ti", "turismo", "gastronomia"]
+        },
+        {
+          "cidade": "Jaraguá do Sul",
+          "cursos": ["analise-desenvolvimento-sistemas", "gestao-ti", "logistica"]
+        },
+        {
+          "cidade": "Gaspar",
+          "cursos": ["analise-desenvolvimento-sistemas", "gestao-ti"]
+        },
+        {
+          "cidade": "Palhoça",
+          "cursos": ["analise-desenvolvimento-sistemas", "gestao-ti", "design"]
+        },
+        {
+          "cidade": "Tubarão",
+          "cursos": ["analise-desenvolvimento-sistemas", "gestao-ti", "seguranca-informacao"]
+        },
+        {
+          "cidade": "Caçador",
+          "cursos": ["analise-desenvolvimento-sistemas", "gestao-ti"]
+        },
+        {
+          "cidade": "Canoinhas",
+          "cursos": ["analise-desenvolvimento-sistemas", "gestao-ti", "logistica"]
+        },
+        {
+          "cidade": "São Lourenço do Oeste",
+          "cursos": ["analise-desenvolvimento-sistemas", "gestao-ti"]
+        },
+        {
+          "cidade": "Xanxerê",
+          "cursos": ["analise-desenvolvimento-sistemas", "gestao-ti"]
+        },
+        {
+          "cidade": "Araranguá",
+          "cursos": ["analise-desenvolvimento-sistemas", "gestao-ti", "gestao-ambiental"]
+        }
+      ]
+    },
+    {
+      "id": "ifc",
+      "nome": "Instituto Federal Catarinense",
+      "sigla": "IFC",
+      "tipo": "publica",
+      "reputacao": 84,
+      "mensalidade": 0,
+      "bolsas": ["Gratuito"],
+      "site": "https://ifc.edu.br",
+      "porte": "medio",
+      "turnos": ["manha", "tarde", "noite"],
+      "campi": [
+        {
+          "cidade": "Araquari",
+          "cursos": ["medicina-veterinaria", "agronomia"]
+        },
+        {
+          "cidade": "Blumenau",
+          "cursos": ["analise-desenvolvimento-sistemas", "gestao-ti", "logistica"]
+        },
+        {
+          "cidade": "Brusque",
+          "cursos": ["analise-desenvolvimento-sistemas", "gestao-ti", "gestao-ambiental"]
+        },
+        {
+          "cidade": "Camboriú",
+          "cursos": ["agronomia", "zootecnia", "gestao-ambiental"]
+        },
+        {
+          "cidade": "Concórdia",
+          "cursos": ["agronomia", "zootecnia"]
+        },
+        {
+          "cidade": "Fraiburgo",
+          "cursos": ["agronomia", "gestao-ambiental"]
+        },
+        {
+          "cidade": "Rio do Sul",
+          "cursos": ["agronomia", "zootecnia", "gestao-ambiental"]
+        },
+        {
+          "cidade": "Santa Rosa do Sul",
+          "cursos": ["agronomia", "zootecnia", "gestao-ambiental"]
+        },
+        {
+          "cidade": "Sombrio",
+          "cursos": ["analise-desenvolvimento-sistemas", "gestao-ti", "logistica"]
+        },
+        {
+          "cidade": "Videira",
+          "cursos": ["analise-desenvolvimento-sistemas", "gestao-ti"]
+        },
+        {
+          "cidade": "Luzerna",
+          "cursos": ["analise-desenvolvimento-sistemas", "gestao-ti"]
+        }
+      ]
+    },
+    {
+      "id": "uffs",
+      "nome": "Universidade Federal da Fronteira Sul",
+      "sigla": "UFFS",
+      "tipo": "publica",
+      "reputacao": 82,
+      "mensalidade": 0,
+      "bolsas": ["Gratuito"],
+      "site": "https://uffs.edu.br",
+      "porte": "medio",
+      "turnos": ["manha", "tarde", "integral", "noite"],
+      "campi": [
+        {
+          "cidade": "Chapecó",
+          "cursos": ["agronomia", "ciencia-computacao", "enfermagem", "biologia", "historia", "letras", "matematica", "pedagogia", "administracao", "economia", "servico-social"]
+        }
+      ]
+    },
+    {
+      "id": "furb",
+      "nome": "Universidade Regional de Blumenau",
+      "sigla": "FURB",
+      "tipo": "comunitaria",
+      "reputacao": 84,
+      "mensalidade": 1200,
+      "custos": {
+        "medicina": 5200,
+        "odontologia": 2800,
+        "direito": 1400,
+        "eng-civil": 1600,
+        "eng-mecanica": 1600,
+        "eng-eletrica": 1600,
+        "arquitetura-urbanismo": 1500
+      },
+      "bolsas": ["ProUni", "FIES", "Bolsas próprias"],
+      "site": "https://furb.br",
+      "porte": "grande",
+      "turnos": ["manha", "tarde", "noite"],
+      "campi": [
+        {
+          "cidade": "Blumenau",
+          "cursos": ["administracao", "ciencias-contabeis", "economia", "direito", "medicina", "enfermagem", "fisioterapia", "nutricao", "farmacia", "odontologia", "psicologia", "eng-civil", "eng-mecanica", "eng-eletrica", "eng-producao", "eng-quimica", "arquitetura-urbanismo", "ciencia-computacao", "sistemas-informacao", "design", "jornalismo", "publicidade-propaganda", "letras", "pedagogia", "matematica", "biologia", "servico-social", "turismo", "gastronomia", "educacao-fisica"]
+        }
+      ]
+    },
+    {
+      "id": "univali",
+      "nome": "Universidade do Vale do Itajaí",
+      "sigla": "UNIVALI",
+      "tipo": "privada",
+      "reputacao": 82,
+      "mensalidade": 1400,
+      "custos": {
+        "medicina": 5800,
+        "odontologia": 3000,
+        "direito": 1600,
+        "eng-civil": 1800,
+        "arquitetura-urbanismo": 1700
+      },
+      "bolsas": ["ProUni", "FIES", "Bolsas próprias"],
+      "site": "https://univali.br",
+      "porte": "grande",
+      "turnos": ["manha", "tarde", "noite"],
+      "campi": [
+        {
+          "cidade": "Itajaí",
+          "cursos": ["direito", "medicina", "odontologia", "enfermagem", "fisioterapia", "nutricao", "farmacia", "psicologia", "biomedicina", "fonoaudiologia", "eng-civil", "eng-mecanica", "eng-eletrica", "eng-producao", "arquitetura-urbanismo", "ciencia-computacao", "sistemas-informacao", "administracao", "ciencias-contabeis", "economia", "jornalismo", "publicidade-propaganda", "design", "pedagogia", "educacao-fisica", "turismo", "gastronomia", "marketing", "relacoes-internacionais", "servico-social", "hotelaria"]
+        },
+        {
+          "cidade": "Balneário Camboriú",
+          "cursos": ["direito", "administracao", "ciencias-contabeis", "psicologia", "eng-civil", "arquitetura-urbanismo", "design", "marketing", "gastronomia", "hotelaria", "educacao-fisica"]
+        },
+        {
+          "cidade": "Florianópolis",
+          "porte": "pequeno",
+          "cursos": ["direito", "administracao", "ciencias-contabeis", "psicologia", "eng-civil", "arquitetura-urbanismo", "design", "marketing"]
+        },
+        {
+          "cidade": "São José",
+          "porte": "medio",
+          "cursos": ["administracao", "ciencias-contabeis", "direito", "eng-producao", "logistica", "gestao-ti"]
+        },
+        {
+          "cidade": "Biguaçu",
+          "porte": "pequeno",
+          "cursos": ["administracao", "pedagogia", "letras", "educacao-fisica", "gestao-rh"]
+        },
+        {
+          "cidade": "Tijucas",
+          "porte": "pequeno",
+          "cursos": ["administracao", "ciencias-contabeis", "direito", "pedagogia"]
+        },
+        {
+          "cidade": "Penha",
+          "porte": "pequeno",
+          "cursos": ["turismo", "gastronomia", "hotelaria", "administracao"]
+        }
+      ]
+    },
+    {
+      "id": "unisul",
+      "nome": "Universidade do Sul de Santa Catarina",
+      "sigla": "UNISUL",
+      "tipo": "privada",
+      "reputacao": 80,
+      "mensalidade": 1100,
+      "custos": {
+        "medicina": 5500,
+        "odontologia": 2600,
+        "direito": 1300,
+        "eng-civil": 1500,
+        "arquitetura-urbanismo": 1400
+      },
+      "bolsas": ["ProUni", "FIES", "Bolsas próprias"],
+      "site": "https://unisul.br",
+      "porte": "grande",
+      "turnos": ["manha", "tarde", "noite"],
+      "campi": [
+        {
+          "cidade": "Tubarão",
+          "cursos": ["medicina", "direito", "enfermagem", "fisioterapia", "nutricao", "farmacia", "odontologia", "biomedicina", "psicologia", "eng-civil", "eng-mecanica", "eng-eletrica", "eng-producao", "arquitetura-urbanismo", "ciencia-computacao", "sistemas-informacao", "administracao", "ciencias-contabeis", "economia", "design", "jornalismo", "publicidade-propaganda", "pedagogia", "educacao-fisica", "servico-social"]
+        },
+        {
+          "cidade": "Palhoça",
+          "cursos": ["direito", "administracao", "ciencias-contabeis", "psicologia", "enfermagem", "fisioterapia", "nutricao", "farmacia", "odontologia", "biomedicina", "eng-civil", "eng-producao", "arquitetura-urbanismo", "ciencia-computacao", "sistemas-informacao", "design", "jornalismo", "publicidade-propaganda", "pedagogia", "educacao-fisica", "gestao-ti", "logistica", "gastronomia", "hotelaria"]
+        },
+        {
+          "cidade": "Florianópolis",
+          "porte": "pequeno",
+          "cursos": ["administracao", "direito", "psicologia", "design", "marketing", "gestao-ti", "logistica"]
+        },
+        {
+          "cidade": "Araranguá",
+          "porte": "pequeno",
+          "cursos": ["administracao", "ciencias-contabeis", "direito", "pedagogia", "enfermagem"]
+        },
+        {
+          "cidade": "Braço do Norte",
+          "porte": "pequeno",
+          "cursos": ["administracao", "ciencias-contabeis", "pedagogia", "gestao-rh"]
+        }
+      ]
+    },
+    {
+      "id": "univille",
+      "nome": "Universidade da Região de Joinville",
+      "sigla": "UNIVILLE",
+      "tipo": "privada",
+      "reputacao": 83,
+      "mensalidade": 1300,
+      "custos": {
+        "medicina": 5600,
+        "odontologia": 2900,
+        "direito": 1500,
+        "eng-civil": 1700,
+        "eng-mecanica": 1700,
+        "arquitetura-urbanismo": 1600
+      },
+      "bolsas": ["ProUni", "FIES", "Bolsas próprias"],
+      "site": "https://univille.br",
+      "porte": "grande",
+      "turnos": ["manha", "tarde", "noite"],
+      "campi": [
+        {
+          "cidade": "Joinville",
+          "cursos": ["medicina", "direito", "enfermagem", "fisioterapia", "nutricao", "farmacia", "odontologia", "biomedicina", "psicologia", "eng-civil", "eng-mecanica", "eng-eletrica", "eng-producao", "eng-quimica", "arquitetura-urbanismo", "ciencia-computacao", "sistemas-informacao", "administracao", "ciencias-contabeis", "economia", "design", "jornalismo", "publicidade-propaganda", "pedagogia", "letras", "historia", "matematica", "biologia", "educacao-fisica", "servico-social", "turismo", "gastronomia"]
+        },
+        {
+          "cidade": "São Bento do Sul",
+          "porte": "pequeno",
+          "cursos": ["administracao", "ciencias-contabeis", "direito", "pedagogia", "eng-producao", "design", "gestao-rh"]
+        }
+      ]
+    },
+    {
+      "id": "unoesc",
+      "nome": "Universidade do Oeste de Santa Catarina",
+      "sigla": "UNOESC",
+      "tipo": "comunitaria",
+      "reputacao": 78,
+      "mensalidade": 900,
+      "custos": {
+        "medicina": 4800,
+        "odontologia": 2400,
+        "medicina-veterinaria": 2200,
+        "direito": 1100,
+        "eng-civil": 1300,
+        "arquitetura-urbanismo": 1200
+      },
+      "bolsas": ["ProUni", "FIES", "Bolsas próprias"],
+      "site": "https://unoesc.edu.br",
+      "porte": "grande",
+      "turnos": ["manha", "tarde", "noite"],
+      "campi": [
+        {
+          "cidade": "Chapecó",
+          "cursos": ["direito", "enfermagem", "fisioterapia", "nutricao", "farmacia", "psicologia", "odontologia", "biomedicina", "eng-civil", "eng-mecanica", "eng-eletrica", "eng-producao", "arquitetura-urbanismo", "ciencia-computacao", "sistemas-informacao", "administracao", "ciencias-contabeis", "economia", "pedagogia", "letras", "matematica", "educacao-fisica", "agronomia", "zootecnia", "servico-social"]
+        },
+        {
+          "cidade": "Joaçaba",
+          "cursos": ["medicina", "direito", "enfermagem", "fisioterapia", "nutricao", "farmacia", "psicologia", "odontologia", "biomedicina", "eng-civil", "eng-producao", "arquitetura-urbanismo", "administracao", "ciencias-contabeis", "pedagogia", "educacao-fisica", "agronomia", "zootecnia", "medicina-veterinaria"]
+        },
+        {
+          "cidade": "Videira",
+          "porte": "pequeno",
+          "cursos": ["administracao", "ciencias-contabeis", "direito", "pedagogia", "eng-producao", "agronomia", "zootecnia"]
+        },
+        {
+          "cidade": "São Miguel do Oeste",
+          "porte": "medio",
+          "cursos": ["administracao", "ciencias-contabeis", "direito", "enfermagem", "fisioterapia", "nutricao", "farmacia", "psicologia", "eng-civil", "eng-producao", "agronomia", "zootecnia", "medicina-veterinaria", "pedagogia"]
+        },
+        {
+          "cidade": "Xanxerê",
+          "porte": "pequeno",
+          "cursos": ["administracao", "ciencias-contabeis", "direito", "pedagogia", "eng-civil", "agronomia", "zootecnia"]
+        },
+        {
+          "cidade": "Capinzal",
+          "porte": "pequeno",
+          "cursos": ["administracao", "ciencias-contabeis", "pedagogia", "gestao-rh"]
+        },
+        {
+          "cidade": "Maravilha",
+          "porte": "pequeno",
+          "cursos": ["administracao", "ciencias-contabeis", "direito", "pedagogia", "enfermagem", "agronomia", "zootecnia"]
+        }
+      ]
+    },
+    {
+      "id": "unochapeco",
+      "nome": "Universidade Comunitária da Região de Chapecó",
+      "sigla": "UNOCHAPECÓ",
+      "tipo": "comunitaria",
+      "reputacao": 80,
+      "mensalidade": 950,
+      "custos": {
+        "medicina": 5000,
+        "odontologia": 2500,
+        "medicina-veterinaria": 2300,
+        "direito": 1150,
+        "eng-civil": 1350,
+        "arquitetura-urbanismo": 1250
+      },
+      "bolsas": ["ProUni", "FIES", "Bolsas próprias"],
+      "site": "https://unochapeco.edu.br",
+      "porte": "grande",
+      "turnos": ["manha", "tarde", "noite"],
+      "campi": [
+        {
+          "cidade": "Chapecó",
+          "cursos": ["medicina", "direito", "enfermagem", "fisioterapia", "nutricao", "farmacia", "psicologia", "odontologia", "biomedicina", "eng-civil", "eng-mecanica", "eng-eletrica", "eng-producao", "arquitetura-urbanismo", "ciencia-computacao", "sistemas-informacao", "administracao", "ciencias-contabeis", "economia", "pedagogia", "letras", "matematica", "educacao-fisica", "agronomia", "zootecnia", "medicina-veterinaria", "servico-social", "jornalismo", "publicidade-propaganda", "design", "turismo", "gastronomia", "hotelaria"]
+        },
+        {
+          "cidade": "São Lourenço do Oeste",
+          "porte": "pequeno",
+          "cursos": ["administracao", "ciencias-contabeis", "direito", "pedagogia", "enfermagem", "agronomia", "zootecnia"]
+        },
+        {
+          "cidade": "Quilombo",
+          "porte": "pequeno",
+          "cursos": ["administracao", "ciencias-contabeis", "pedagogia", "agronomia"]
+        },
+        {
+          "cidade": "Xaxim",
+          "porte": "pequeno",
+          "cursos": ["administracao", "ciencias-contabeis", "direito", "pedagogia", "agronomia", "zootecnia"]
+        }
+      ]
+    },
+    {
+      "id": "unc",
+      "nome": "Universidade do Contestado",
+      "sigla": "UNC",
+      "tipo": "comunitaria",
+      "reputacao": 76,
+      "mensalidade": 850,
+      "custos": {
+        "medicina": 4800,
+        "odontologia": 2300,
+        "medicina-veterinaria": 2100,
+        "direito": 1000,
+        "eng-civil": 1200,
+        "arquitetura-urbanismo": 1100
+      },
+      "bolsas": ["ProUni", "FIES", "Bolsas próprias"],
+      "site": "https://unc.br",
+      "porte": "grande",
+      "turnos": ["manha", "tarde", "noite"],
+      "campi": [
+        {
+          "cidade": "Caçador",
+          "cursos": ["medicina", "direito", "enfermagem", "fisioterapia", "nutricao", "farmacia", "odontologia", "biomedicina", "psicologia", "eng-civil", "eng-producao", "arquitetura-urbanismo", "administracao", "ciencias-contabeis", "pedagogia", "letras", "matematica", "educacao-fisica", "agronomia", "zootecnia", "medicina-veterinaria", "servico-social", "ciencia-computacao", "sistemas-informacao"]
+        },
+        {
+          "cidade": "Canoinhas",
+          "porte": "pequeno",
+          "cursos": ["administracao", "ciencias-contabeis", "direito", "pedagogia", "enfermagem", "agronomia", "zootecnia"]
+        },
+        {
+          "cidade": "Curitibanos",
+          "porte": "pequeno",
+          "cursos": ["administracao", "ciencias-contabeis", "direito", "pedagogia", "agronomia", "zootecnia", "medicina-veterinaria"]
+        },
+        {
+          "cidade": "Mafra",
+          "porte": "pequeno",
+          "cursos": ["administracao", "ciencias-contabeis", "direito", "pedagogia", "enfermagem", "eng-producao", "agronomia"]
+        },
+        {
+          "cidade": "Concórdia",
+          "porte": "medio",
+          "cursos": ["administracao", "ciencias-contabeis", "direito", "pedagogia", "enfermagem", "agronomia", "zootecnia", "medicina-veterinaria"]
+        }
+      ]
+    },
+    {
+      "id": "unesc",
+      "nome": "Universidade do Extremo Sul Catarinense",
+      "sigla": "UNESC",
+      "tipo": "comunitaria",
+      "reputacao": 82,
+      "mensalidade": 1100,
+      "custos": {
+        "medicina": 5200,
+        "odontologia": 2600,
+        "direito": 1300,
+        "eng-civil": 1500,
+        "arquitetura-urbanismo": 1400
+      },
+      "bolsas": ["ProUni", "FIES", "Bolsas próprias"],
+      "site": "https://unesc.net",
+      "porte": "grande",
+      "turnos": ["manha", "tarde", "noite"],
+      "campi": [
+        {
+          "cidade": "Criciúma",
+          "cursos": ["medicina", "direito", "enfermagem", "fisioterapia", "nutricao", "farmacia", "odontologia", "biomedicina", "psicologia", "eng-civil", "eng-mecanica", "eng-eletrica", "eng-producao", "eng-quimica", "arquitetura-urbanismo", "ciencia-computacao", "sistemas-informacao", "administracao", "ciencias-contabeis", "economia", "design", "jornalismo", "publicidade-propaganda", "pedagogia", "letras", "matematica", "educacao-fisica", "servico-social", "turismo", "gastronomia", "gestao-ambiental"]
+        },
+        {
+          "cidade": "Araranguá",
+          "porte": "pequeno",
+          "cursos": ["administracao", "ciencias-contabeis", "direito", "pedagogia", "enfermagem", "fisioterapia", "nutricao", "psicologia", "eng-civil", "eng-producao", "gestao-ambiental"]
+        }
+      ]
+    },
+    {
+      "id": "uniplac",
+      "nome": "Universidade do Planalto Catarinense",
+      "sigla": "UNIPLAC",
+      "tipo": "comunitaria",
+      "reputacao": 74,
+      "mensalidade": 800,
+      "custos": {
+        "odontologia": 2200,
+        "direito": 950,
+        "eng-civil": 1100,
+        "arquitetura-urbanismo": 1050
+      },
+      "bolsas": ["ProUni", "FIES", "Bolsas próprias"],
+      "site": "https://uniplaclages.edu.br",
+      "porte": "medio",
+      "turnos": ["manha", "tarde", "noite"],
+      "campi": [
+        {
+          "cidade": "Lages",
+          "cursos": ["administracao", "ciencias-contabeis", "direito", "enfermagem", "fisioterapia", "nutricao", "farmacia", "odontologia", "biomedicina", "psicologia", "eng-civil", "eng-producao", "arquitetura-urbanismo", "pedagogia", "letras", "matematica", "educacao-fisica", "agronomia", "zootecnia", "medicina-veterinaria", "servico-social", "ciencia-computacao", "sistemas-informacao"]
+        }
+      ]
+    },
+    {
+      "id": "unifebe",
+      "nome": "Centro Universitário de Brusque",
+      "sigla": "UNIFEBE",
+      "tipo": "comunitaria",
+      "reputacao": 76,
+      "mensalidade": 900,
+      "custos": {
+        "direito": 1050,
+        "eng-civil": 1200,
+        "eng-mecanica": 1200,
+        "arquitetura-urbanismo": 1150
+      },
+      "bolsas": ["ProUni", "FIES", "Bolsas próprias"],
+      "site": "https://unifebe.edu.br",
+      "porte": "medio",
+      "turnos": ["manha", "tarde", "noite"],
+      "campi": [
+        {
+          "cidade": "Brusque",
+          "cursos": ["administracao", "ciencias-contabeis", "direito", "enfermagem", "fisioterapia", "nutricao", "psicologia", "eng-civil", "eng-mecanica", "eng-eletrica", "eng-producao", "arquitetura-urbanismo", "pedagogia", "letras", "matematica", "educacao-fisica", "ciencia-computacao", "sistemas-informacao", "design", "jornalismo", "publicidade-propaganda", "gestao-rh", "logistica"]
+        }
+      ]
+    },
+    {
+      "id": "unisociesc",
+      "nome": "Centro Universitário Sociesc",
+      "sigla": "UNISOCIESC",
+      "tipo": "privada",
+      "reputacao": 74,
+      "mensalidade": 800,
+      "custos": {
+        "eng-civil": 1100,
+        "eng-mecanica": 1100,
+        "eng-eletrica": 1100,
+        "direito": 950
+      },
+      "bolsas": ["ProUni", "FIES", "Bolsas próprias"],
+      "site": "https://unisociesc.com.br",
+      "porte": "medio",
+      "turnos": ["manha", "tarde", "noite"],
+      "campi": [
+        {
+          "cidade": "Joinville",
+          "porte": "grande",
+          "cursos": ["eng-civil", "eng-mecanica", "eng-eletrica", "eng-producao", "administracao", "ciencias-contabeis", "design", "marketing", "gestao-ti", "analise-desenvolvimento-sistemas", "logistica", "gestao-rh", "gastronomia"]
+        },
+        {
+          "cidade": "Blumenau",
+          "cursos": ["administracao", "ciencias-contabeis", "eng-producao", "design", "marketing", "gestao-ti", "analise-desenvolvimento-sistemas", "logistica"]
+        },
+        {
+          "cidade": "Florianópolis",
+          "porte": "pequeno",
+          "cursos": ["administracao", "ciencias-contabeis", "eng-civil", "design", "marketing", "gestao-ti", "analise-desenvolvimento-sistemas"]
+        },
+        {
+          "cidade": "Jaraguá do Sul",
+          "porte": "pequeno",
+          "cursos": ["administracao", "ciencias-contabeis", "eng-mecanica", "eng-producao", "design", "gestao-ti", "analise-desenvolvimento-sistemas", "logistica"]
+        },
+        {
+          "cidade": "São Bento do Sul",
+          "porte": "pequeno",
+          "cursos": ["administracao", "ciencias-contabeis", "eng-producao", "gestao-ti", "analise-desenvolvimento-sistemas"]
+        },
+        {
+          "cidade": "Chapecó",
+          "porte": "pequeno",
+          "cursos": ["administracao", "ciencias-contabeis", "eng-producao", "gestao-ti", "analise-desenvolvimento-sistemas", "logistica"]
+        }
+      ]
+    }
+  ]
+}
